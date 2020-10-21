@@ -1,0 +1,22 @@
+{
+  "name": "vendingmachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrstepak/vendingMachine.git"
+  },
+  "author": "Piotr Stępak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotrstepak/vendingMachine/issues"
+  },
+  "homepage": "https://github.com/piotrstepak/vendingMachine#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
