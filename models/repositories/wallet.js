@@ -45,6 +45,24 @@ class Wallet extends Repository {
             this.repository.set(key, []);
         }
     }
+
+    walletValue() {
+        let walletValue = 0;
+        const elementValue = key => {
+            return this.repository.get(key)[0].value;
+        };
+        const arrLength = key => {
+            return this.repository.get(key).length;
+        };
+        //specific coin all
+
+        for (let key of this.repository.keys()) {//jak wyzej let [key, value] of this.repository
+            if (this.repository.get(key).length > 0) {
+                walletValue += arrLength(key) * elementValue(key);
+            }
+        }
+        return walletValue;
+    }
 }
 
 module.exports = Wallet;
